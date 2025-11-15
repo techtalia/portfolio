@@ -16,11 +16,11 @@ const Project = ({ image, title, content, link }: projectProps) => {
   }
 
   return (
-    <div className="flex" onClick={openLink}>
-      <Image src={image} alt="" width={120} height={50}></Image>
+    <div className="flex rounded-md hover:bg-linear-to-r from-[#C5D3E0] to-[#e0ecff] hover:cursor-pointer gap-4 p-4" onClick={openLink}>
+      <Image src={image} alt="" width={120} className="rounded-sm"></Image>
       {/* title and content */}
-      <div >
-        <p>{title}</p>
+      <div className="space-y-1">
+        <p className="font-semibold">{title}</p>
         <p>{content}</p>
       </div>
     </div>
