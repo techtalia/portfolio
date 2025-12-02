@@ -3,35 +3,24 @@
 import Sidebar from "./modules/sidebar";
 import About from "./modules/about";
 import Project from "./modules/project";
-import img from "../../public/download.jpg";
 import bloom from "../../public/bloom.png";
 import blueprintt from "../../public/blueprintt.png";
 import scaler from "../../public/scaler.png";
 import cifracesar from "../../public/cifracesar.png";
 import ybyra from "../../public/ybyra.png";
-import Head from "next/head";
 import Experience from "./modules/experience";
-import { useRouter } from "next/navigation";
 
 export default function Home() {
-  // 1. State for controlling the sidebar style
-  const router = useRouter();
-
   return (
     <>
-      <Head>{/* ... (Head content) ... */}</Head>
       <div id="background" className="flex px-48">
-        <main id="content" className=" w-full h-full">
-          {/* left side, menu and links */}
-          {/* 4. Apply ref and conditional style */}
+        <main id="content" className="w-full h-full">
           <div className={`fixed w-1/4 pt-24 `} id="sidebar">
             <Sidebar />
           </div>
 
           {/* right side, content */}
           <div className="ml-140 overflow-y-auto mb-14">
-            {/* About */}
-            {/* 4. Apply ref to the target element */}
             <div id="about">
               <About />
             </div>
@@ -91,7 +80,7 @@ export default function Home() {
             </div>
 
             {/* Experience */}
-            <div id="experience" className="pt-24" >
+            <div id="experience" className="pt-24">
               <Experience
                 year="2023 — 2025"
                 position="Desenvolvedora Junior"
@@ -110,8 +99,6 @@ export default function Home() {
                   "Flutterflow",
                 ]}
               />
-
-                
             </div>
           </div>
         </main>
