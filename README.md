@@ -6,5 +6,13 @@
 - React/Next;
 - Tailwind;
 - Mui Icons;
+- Deploy com Vercel.
 
-# Deploy com Vercel
+# Próximas tarefas:
+
+- Adicionar formação acadêmica;
+- Dark mode;
+- Layout para telas menores (mobile);
+- Animações de mouse (Spotlight) e menu lateral;
+
+
