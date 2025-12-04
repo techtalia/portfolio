@@ -2,7 +2,8 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="pt-24 p-4 space-y-3">
+    <div className="pt-24 space-y-3 ">
+      <p className="font-bold pb-8 lg:hidden">SOBRE</p>
       <p>
         Sou uma desenvolvedora front-end com foco em construir projetos focados
         na experiência do usuário. Utilizo os recursos das

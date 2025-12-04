@@ -13,20 +13,22 @@ import Experience from "./modules/experience";
 export default function Home() {
   return (
     <>
-      <div id="background" className="flex px-48">
+      <div id="background" className="lg:flex lg:px-48 px-8 py-16">
         <main id="content" className="w-full h-full">
-          <div className={`fixed w-1/4 pt-24 `} id="sidebar">
+          <div className="lg:fixed lg:w-1/4 lg:pt-24" id="sidebar">
             <Sidebar />
           </div>
 
           {/* right side, content */}
-          <div className="ml-140 overflow-y-auto mb-14">
+          <div className="xl:ml-140 lg:ml-100 overflow-y-auto mb-14 w-fit">
             <div id="about">
               <About />
             </div>
 
             {/* Projects */}
-            <div id="projects" className="pt-24">
+            <div id="projects" className="pt-24 ">
+              <p className="font-bold pb-8 lg:hidden">PROJETOS</p>
+
               <Project
                 link="https://www.bloombyimpact.com/"
                 title="Bloom"
@@ -81,8 +83,10 @@ export default function Home() {
 
             {/* Experience */}
             <div id="experience" className="pt-24">
+              <p className="font-bold pb-8 lg:hidden">EXPERIÊNCIA</p>
+
               <Experience
-                year="2023 — 2025"
+                year="DEZ 2023 — PRESENTE"
                 position="Desenvolvedora Junior"
                 company="DevMagic"
                 link="https://devmagic.com.br/home/"

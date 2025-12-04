@@ -19,21 +19,24 @@ const Project = ({ image, title, content, link, tags }: projectProps) => {
   return (
     <div
     
-      className="group flex rounded-md hover:bg-linear-to-r from-[#C5D3E0] to-[#e0ecff] hover:cursor-pointer gap-4 p-4"
+      className="group sm:flex rounded-md hover:bg-linear-to-r from-[#C5D3E0] to-[#e0ecff] hover:cursor-pointer gap-4 pb-8 w-full "
       onClick={openLink}
     >
+      
+      <div className="w-1/4 pb-2 sm:pb-0">
+
       <Image
         src={image}
         alt=""
-        width={200}
-        className="rounded-sm group-hover:border-green-400 group-hover:border-2"
-      ></Image>
+        className="rounded-sm group-hover:border-green-400 group-hover:border-2 "
+        ></Image>
+        </div>
 
       {/* title and content */}
-      <div>
+      <div className="sm:w-3/4">
         <p className="font-semibold">{title}</p>
         <p className="text-sm">{content}</p>
-        <div className="flex gap-1">
+        <div className="flex gap-1 flex-wrap">
           {tags?.map((tag) => (
             <p
               key={tag}

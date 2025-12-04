@@ -27,10 +27,10 @@ const Experience = ({
   return (
     <div>
       <div
-        className="group flex rounded-md hover:bg-linear-to-r from-[#C5D3E0] to-[#e0ecff] hover:cursor-pointer p-4 w-full "
+        className="group sm:flex rounded-md hover:bg-linear-to-r from-[#C5D3E0] to-[#e0ecff] hover:cursor-pointer w-full gap-2 space-y-4 "
         onClick={openLink}
       >
-        <p className="text-sm w-1/4">{year}</p>
+        <p className="text-xs w-1/4">{year}</p>
 
         {/* title and content */}
         <div className="w-3/4">
@@ -50,10 +50,10 @@ const Experience = ({
             ))}
           </div>
         </div>
-      </div>
 
+      </div>
       <Link href={"/curriculo"} target="_blank">
-        <button className="hover:text-[#051650] hover:font-bold hover:cursor-pointer">
+        <button className="hover:text-[#051650] hover:font-bold hover:cursor-pointer mt-4">
           Ver currículo completo
         </button>
       </Link>
