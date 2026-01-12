@@ -3,9 +3,14 @@ import React from "react";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
+interface sidebarProps {
+  inViewAbout: boolean;
+  inViewProjects: boolean;
+  inViewExperience: boolean;
+}
 
+const Sidebar = ({ inViewAbout, inViewExperience, inViewProjects}:sidebarProps) => {
 
-const Sidebar = ( ) => {
   return (
     <div >
       {/* Title */}
@@ -18,19 +23,20 @@ const Sidebar = ( ) => {
       </div>
 
       {/* menu */}
-      <div className="lg:flex lg:flex-col lg:justify-start lg:w-fit lg:mb-60 lg:space-y-2 hidden">
+      <div className="lg:flex lg:flex-col lg:justify-start lg:w-fit lg:mb-40 lg:space-y-2 hidden">
         
-      <a href="#about" className="hover:text-[#051650] hover:font-bold">— SOBRE</a> 
-      <a href="#projects" className="hover:text-[#051650] hover:font-bold">— PROJETOS</a>
-      <a href="#experience" className="hover:text-[#051650] hover:font-bold">— EXPERIÊNCIA</a>
+        
+      <a href="#about" className={`hover:text-[#051650] hover:font-bold ${ inViewAbout ? "text-[#051650] font-bold" : ""}`} >— SOBRE</a> 
+      <a href="#projects" className={`hover:text-[#051650] hover:font-bold ${ inViewProjects ? "text-[#051650] font-bold" : ""}`}>— PROJETOS</a>
+      <a href="#experience" className={`hover:text-[#051650] hover:font-bold ${ inViewExperience ? "text-[#051650] font-bold" : ""}`}>— EXPERIÊNCIA</a>
       {/* <a href="#education">FORMAÇÃO</a> */}
       </div>
 
       {/* footer */}
       <div className="space-x-4">
-        <a href="https://github.com/techtalia" target="_blank">
+        <a href="https://github.com/techtalia" target="_blank" >
           {/* reverter as cores no darktheme */}
-          <GitHubIcon fontSize="large" sx={{color: "#01579b", '&:hover': {color: "#03a9f4"}}} />
+          <GitHubIcon fontSize="large" sx={{color: "#01579b", '&:hover': {color: "#03a9f4"}}}  />
         </a>
         <a href="https://www.linkedin.com/in/techtalia/" target="_blank">
           <LinkedInIcon  fontSize="large" sx={{color: "#01579b", '&:hover': {color: "#03a9f4"}}}/>

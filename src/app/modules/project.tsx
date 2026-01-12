@@ -8,10 +8,11 @@ interface projectProps {
   title: string;
   content: string;
   link: string;
+  alt: string;
   tags?: string[];
 }
 
-const Project = ({ image, title, content, link, tags }: projectProps) => {
+const Project = ({ image, title, content, link, alt, tags }: projectProps) => {
   function openLink() {
     window.open(link)?.focus();
   }
@@ -19,15 +20,16 @@ const Project = ({ image, title, content, link, tags }: projectProps) => {
   return (
     <div
     
-      className="group sm:flex rounded-md hover:bg-linear-to-r from-[#C5D3E0] to-[#e0ecff] hover:cursor-pointer gap-4 pb-8 w-full "
+      className="group sm:flex rounded-md hover:bg-linear-to-r from-[#C5D3E0] to-[#e0ecff] hover:cursor-pointer gap-4 pb-8 mb-8 w-full "
       onClick={openLink}
     >
       
-      <div className="w-1/4 pb-2 sm:pb-0">
+      <div className="w-2/4 lg:w-2/5 pb-2 sm:pb-0">
 
       <Image
         src={image}
-        alt=""
+        alt={alt}
+        objectFit="contain"
         className="rounded-sm group-hover:border-green-400 group-hover:border-2 "
         ></Image>
         </div>
@@ -36,7 +38,7 @@ const Project = ({ image, title, content, link, tags }: projectProps) => {
       <div className="sm:w-3/4">
         <p className="font-semibold">{title}</p>
         <p className="text-sm">{content}</p>
-        <div className="flex gap-1 flex-wrap">
+        <div className="flex gap-1 mt-4 flex-wrap">
           {tags?.map((tag) => (
             <p
               key={tag}

@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const About = () => {
   return (
     <div className="pt-24 space-y-3 ">

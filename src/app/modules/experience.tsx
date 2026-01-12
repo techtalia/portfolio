@@ -39,7 +39,7 @@ const Experience = ({
             <p className="font-semibold">{company}</p>
           </div>
           <p className="text-sm ">{description}</p>
-          <div className="gap-1 flex flex-wrap mt-1">
+          <div className="gap-1 flex flex-wrap mt-2">
             {tags?.map((tag) => (
               <p
                 key={tag}
@@ -53,7 +53,7 @@ const Experience = ({
 
       </div>
       <Link href={"/curriculo"} target="_blank">
-        <button className="hover:text-[#051650] hover:font-bold hover:cursor-pointer mt-4">
+        <button className="hover:text-[#051650] font-bold hover:cursor-pointer mt-4">
           Ver currículo completo
         </button>
       </Link>

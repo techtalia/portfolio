@@ -15,4 +15,7 @@
 - Layout para telas menores (mobile);
 - Animações de mouse (Spotlight) e menu lateral;
 
+# Tarefas concluídas:
+- Animação de menu lateral utilizando React Intersection Observer API
+
 
