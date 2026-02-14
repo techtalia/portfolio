@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="pt-24 w-4/5">
+    <div className="pt-24 w-4/5 px-8 lg:px-0">
       <p>
         Código feito no{" "}
         <a

@@ -30,9 +30,9 @@ export default function Home() {
 
   return (
     <>
-      <div id="background" className="lg:flex lg:px-48 px-8 py-16">
-        <main id="content" className="w-full h-full">
-          <div className="lg:fixed lg:w-1/4 lg:pt-24" id="sidebar">
+      <div id="background" className="lg:flex lg:px-48 py-16">
+        <main id="content" >
+          <div className="lg:fixed lg:w-1/4 lg:pt-24 px-8" id="sidebar">
             {/* <p className={`${inViewAbout ? "text-red-800" : "text-blue-800"}`}>
               teste About
             </p>
@@ -58,7 +58,7 @@ export default function Home() {
 
           {/* right side, content */}
           <div
-            className="xl:ml-140 lg:ml-100 overflow-y-auto mb-6 w-fit"
+            className="xl:ml-140 lg:ml-100 mb-6 w-fit"
             
           >
             <div id="about" ref={refAbout}>
@@ -67,7 +67,8 @@ export default function Home() {
 
             {/* Projects */}
             <div id="projects" className="mt-36 " ref={refProjects}>
-              <p className="font-bold pb-8 lg:hidden">PROJETOS</p>
+              <p className="font-bold pb-8 lg:hidden sticky top-0 backdrop-blur-sm px-8">PROJETOS</p>
+              <div className="px-8 lg:px-0">
 
               <Project
                 link="https://www.bloombyimpact.com/"
@@ -124,12 +125,15 @@ export default function Home() {
                 alt="Página inicial do projeto Conexão Ybyra"
                 tags={["React", "Typescript", "MySQL", "Java", "Spring"]}
               />
+              </div>
             </div>
 
             {/* Experience */}
             <div id="experience" className="pt-24" ref={refExperience}>
-              <p className="font-bold pb-8 lg:hidden">EXPERIÊNCIA</p>
-
+              <p className="font-bold pb-8 lg:hidden sticky top-0 backdrop-blur-sm px-8">
+                EXPERIÊNCIA
+              </p>
+              <div className="px-8 lg:px-0">
               <Experience
                 year="DEZ 2023 — PRESENTE"
                 position="Desenvolvedora Junior"
@@ -148,6 +152,7 @@ export default function Home() {
                   "Flutterflow",
                 ]}
               />
+              </div>
             </div>
 
             {/* Footer */}

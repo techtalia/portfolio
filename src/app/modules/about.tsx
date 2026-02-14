@@ -4,7 +4,8 @@ import React from "react";
 const About = () => {
   return (
     <div className="pt-24 space-y-3 ">
-      <p className="font-bold pb-8 lg:hidden">SOBRE</p>
+      <p className="font-bold pb-8 lg:hidden sticky top-0 px-8 backdrop-blur-sm">SOBRE</p>
+      <div className="px-8 lg:px-0">
       <p>
         Sou uma desenvolvedora front-end com foco em construir projetos focados
         na experiência do usuário. Utilizo os recursos das
@@ -44,6 +45,7 @@ const About = () => {
         rumo na praia, e de experimentar todo tipo de jogos de RPG ou Roguelike
         que eu encontrar.
       </p>
+      </div>
     </div>
   );
 };
