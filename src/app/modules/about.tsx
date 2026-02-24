@@ -4,8 +4,8 @@ import React from "react";
 const About = () => {
   return (
     <div className="pt-24 space-y-3 ">
-      <p className="font-bold pb-8 lg:hidden sticky top-0 px-8 backdrop-blur-sm">SOBRE</p>
-      <div className="px-8 lg:px-0">
+      <p className="font-bold pb-8 lg:hidden sticky top-0 px-8 backdrop-blur-sm dark:text-offWhite">SOBRE</p>
+      <div className="px-8 lg:px-0 dark:text-offWhite">
       <p>
         Sou uma desenvolvedora front-end com foco em construir projetos focados
         na experiência do usuário. Utilizo os recursos das
@@ -19,7 +19,7 @@ const About = () => {
         <a
           href="https://devmagic.com.br/home/"
           target="_blank"
-          className="text-[#051650] font-bold hover:text-[#009999]"
+          className="text-darkBlue font-bold hover:text-lightBlue dark:text-lightBlue dark:hover:text-hoverBlue"
         >
           DevMagic
         </a>

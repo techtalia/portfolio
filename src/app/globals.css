@@ -11,11 +11,18 @@ html {
   --foreground: #171717;
 }
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --color-darkBlue: #0a304a;
+  --color-offWhite: #F5F5F5;
+  --color-lightBlue: #009999;
+  --color-hoverBlue: #6fa8dc;
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -31,4 +38,8 @@ html {
 body {
   background: var(--background);
   color: var(--foreground);
+}
+
+*{
+  @apply transition-colors duration-200
 }

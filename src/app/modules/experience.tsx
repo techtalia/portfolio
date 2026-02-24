@@ -27,23 +27,23 @@ const Experience = ({
   return (
     <div>
       <div
-        className="group sm:flex rounded-md hover:bg-linear-to-r from-[#C5D3E0] to-[#e0ecff] hover:cursor-pointer w-full gap-2 space-y-4 "
+        className="group sm:flex rounded-md hover:bg-linear-to-r from-[#C5D3E0] to-[#e0ecff] hover:cursor-pointer w-full gap-2 space-y-4 dark:hover:bg-linear-to-r dark:from-[#0b5394] dark:to-[#073763]"
         onClick={openLink}
       >
-        <p className="text-xs w-1/4">{year}</p>
+        <p className="text-xs w-1/4 dark:text-offWhite">{year}</p>
 
         {/* title and content */}
         <div className="w-3/4">
           <div className="flex gap-2">
-            <p className="font-semibold">{position}</p>•
-            <p className="font-semibold">{company}</p>
+            <p className="font-semibold dark:text-offWhite">{position}</p>•
+            <p className="font-semibold dark:text-offWhite">{company}</p>
           </div>
-          <p className="text-sm ">{description}</p>
+          <p className="text-sm dark:text-offWhite">{description}</p>
           <div className="gap-1 flex flex-wrap mt-2">
             {tags?.map((tag) => (
               <p
                 key={tag}
-                className="bg-[#051650] text-green-200 px-2 rounded-lg text-sm"
+                className="bg-[#051650] text-green-200 px-2 rounded-lg text-sm dark:bg-hoverBlue dark:text-black"
               >
                 {tag}
               </p>
@@ -53,7 +53,7 @@ const Experience = ({
 
       </div>
       <Link href={"/curriculo"} target="_blank">
-        <button className="hover:text-[#051650] font-bold hover:cursor-pointer mt-4">
+        <button className="hover:text-darkBlue font-bold hover:cursor-pointer mt-4 dark:text-lightBlue dark:hover:text-hoverBlue">
           Ver currículo completo
         </button>
       </Link>

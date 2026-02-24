@@ -30,7 +30,7 @@ export default function Home() {
 
   return (
     <>
-      <div id="background" className="lg:flex lg:px-48 py-16">
+      <div id="background" className="lg:flex lg:px-48 py-16 dark:bg-darkBlue">
         <main id="content" >
           <div className="lg:fixed lg:w-1/4 lg:pt-24 px-8" id="sidebar">
             {/* <p className={`${inViewAbout ? "text-red-800" : "text-blue-800"}`}>
@@ -67,7 +67,7 @@ export default function Home() {
 
             {/* Projects */}
             <div id="projects" className="mt-36 " ref={refProjects}>
-              <p className="font-bold pb-8 lg:hidden sticky top-0 backdrop-blur-sm px-8">PROJETOS</p>
+              <p className="font-bold pb-8 lg:hidden sticky top-0 backdrop-blur-sm px-8 dark:text-offWhite">PROJETOS</p>
               <div className="px-8 lg:px-0">
 
               <Project
@@ -130,7 +130,7 @@ export default function Home() {
 
             {/* Experience */}
             <div id="experience" className="pt-24" ref={refExperience}>
-              <p className="font-bold pb-8 lg:hidden sticky top-0 backdrop-blur-sm px-8">
+              <p className="font-bold pb-8 lg:hidden sticky top-0 backdrop-blur-sm px-8 dark:text-offWhite">
                 EXPERIÊNCIA
               </p>
               <div className="px-8 lg:px-0">
