@@ -11,11 +11,12 @@
 # Próximas tarefas:
 
 - Adicionar formação acadêmica;
-- Dark mode;
-- Layout para telas menores (mobile);
-- Animações de mouse (Spotlight) e menu lateral;
+- Animações de mouse (Spotlight)
 
 # Tarefas concluídas:
 - Animação de menu lateral utilizando React Intersection Observer API
+- Dark Mode
+- Layout para telas menores (mobile);
+
 
 
