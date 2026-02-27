@@ -18,10 +18,14 @@ const Sidebar = ({
 }: sidebarProps) => {
   const toggleDarkMode = () => {
     const body = document?.querySelector(".parentDiv");
+    const cursorDiv = document?.querySelector(".cursorDiv");
     if (body?.classList.contains("dark")) {
       body.classList.remove("dark");
+      cursorDiv?.classList.remove("cursor-glow")
     } else {
       body?.classList.add("dark");
+      cursorDiv?.classList.add("cursor-glow")
+
     }
   };
 
