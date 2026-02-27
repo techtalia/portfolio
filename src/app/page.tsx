@@ -10,13 +10,12 @@ import cifracesar from "../../public/cifracesar.png";
 import ybyra from "../../public/ybyra.png";
 import Experience from "./modules/experience";
 import Footer from "./modules/footer";
-import { useInView, useOnInView } from "react-intersection-observer";
+import { useInView } from "react-intersection-observer";
 
 export default function Home() {
   const [refAbout, inViewAbout] = useInView({
-    /* Optional options */
-    threshold: 0.3, // Triggers when any part of the element is visible
-    triggerOnce: false, // Only trigger the event once
+    threshold: 0.3,
+    triggerOnce: false, 
   });
 
   const [refProjects, inViewProjects] = useInView({
@@ -33,22 +32,7 @@ export default function Home() {
       <div id="background" className="lg:flex lg:px-48 py-16 dark:bg-darkBlue">
         <main id="content" >
           <div className="lg:fixed lg:w-1/4 lg:pt-24 px-8" id="sidebar">
-            {/* <p className={`${inViewAbout ? "text-red-800" : "text-blue-800"}`}>
-              teste About
-            </p>
-            <p
-              className={`${inViewProjects ? "text-red-800" : "text-blue-800"}`}
-            >
-              teste Projects
-            </p>
-            <p
-              className={`${
-                inViewExperience ? "text-red-800" : "text-blue-800"
-              }`}
-            >
-              teste Experience
-            </p> */}
-
+            
             <Sidebar
               inViewAbout={inViewAbout}
               inViewProjects={inViewProjects}

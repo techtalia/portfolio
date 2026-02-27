@@ -1,9 +1,8 @@
 "use client";
-import React, { useEffect } from "react";
+import React from "react";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
-import LightModeIcon from "@mui/icons-material/LightMode";
 
 interface sidebarProps {
   inViewAbout: boolean;
