@@ -13,6 +13,7 @@ const About = () => {
         excessivamente e desnecessariamente robustos e ilegíveis, combinando
         acessibilidade e usabilidade com performance e eficiência.
       </p>
+      <br />
 
       <p>
         Atualmente sou Desenvolvedora Jr. na{" "}
@@ -32,6 +33,7 @@ const About = () => {
         supervisão de desenvolvedores sêniors, assim aprimorando conhecimentos
         técnicos e soft skills.
       </p>
+      <br />
       <p>
         Possuo certificações abrangentes em Typescript e React - áreas de
         enfoque primário - bem como em Node.Js, Python, Java e Cloud Computing
@@ -40,6 +42,7 @@ const About = () => {
         interpessoais e colaborativas, fomentadas ao longo de anos de
         experiência em sala de aula.
       </p>
+      <br />
       <p>
         No meu tempo livre, gosto de passear com minha cachorra, caminhar sem
         rumo na praia, e de experimentar todo tipo de jogos de RPG ou Roguelike
