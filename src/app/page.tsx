@@ -11,8 +11,10 @@ import ybyra from "../../public/ybyra.png";
 import Experience from "./modules/experience";
 import Footer from "./modules/footer";
 import { useInView } from "react-intersection-observer";
+import { useTranslation } from "react-i18next";
 
 export default function Home() {
+  const { t } = useTranslation();
   const [refAbout, inViewAbout] = useInView({
     threshold: 0.3,
     triggerOnce: false, 
@@ -51,15 +53,15 @@ export default function Home() {
 
             {/* Projects */}
             <div id="projects" className="mt-36 " ref={refProjects}>
-              <p className="font-bold pb-8 lg:hidden sticky top-0 backdrop-blur-sm px-8 dark:text-offWhite">PROJETOS</p>
+              <p className="font-bold pb-8 lg:hidden sticky top-0 backdrop-blur-sm px-8 dark:text-offWhite">{t('projects.title')}</p>
               <div className="px-8 lg:px-0">
 
               <Project
                 link="https://www.bloombyimpact.com/"
-                title="Bloom"
-                content="Bloom é uma plataforma de monitoramento e avaliação de impacto social, ajudando empresas a atingirem métricas de Governança, Impacto Social e Ambiental."
+                title={`${t('projects.bloom')}`}
+                content={t('projects.bloomContent')}
                 image={bloom}
-                alt="Página inicial do site Bloom"
+                alt={t('projects.bloomAlt')}
                 tags={[
                   "React",
                   "Next",
@@ -71,10 +73,10 @@ export default function Home() {
               />
               <Project
                 link="https://blueprintt.co/"
-                title="Blueprintt"
-                content="Backoffice de uma plataforma de organização de eventos corporativos."
+                title={t('projects.blueprintt')}
+                content={t('projects.blueprinttContent')}
                 image={blueprintt}
-                alt="Página inicial do site Blueprintt"
+                alt={t('projects.blueprinttAlt')}
                 tags={[
                   "Bubble.io",
                   "Pagar.me",
@@ -86,27 +88,27 @@ export default function Home() {
 
               <Project
                 link="https://app.scalersale.com/"
-                title="Scaler Sale"
-                content="Plataforma de soluções para a área comercial. Oferece ferramentas como: prospecção via e-mail; busca de leads personalizados; e playbooks de vendas."
+                title={t('projects.scaler')}
+                content={t('projects.scalerContent')}
                 image={scaler}
-                alt="Página inicial do site Scaler Sale"
+                alt={t('projects.scalerAlt')}
                 tags={["Bubble.io", "Pagar.me", "Brevo", "PostgreSQL"]}
               />
               <Project
                 link="https://cifra-de-cesar-funcional.vercel.app/"
-                title="Cifra de Cesar"
-                content="Técnica de criptografia clássica, onde cada letra de um texto é substituída por outra, que se encontra no alfabeto após a primeira letra em um número definido de vezes."
+                title={t('projects.cifraDeCesar')}
+                content={t('projects.cifraDeCesarContent')}
                 image={cifracesar}
-                alt="Página inicial do projeto Cifra de Cesar"
+                alt={t('projects.cifraDeCesarAlt')}
                 tags={["React", "Typescript"]}
               />
 
               <Project
                 link="https://conexao-ybyra.vercel.app/"
-                title="Conexão Ybyra"
-                content="Projeto de uma rede social que conecta usuários e atividades em parques e praças públicas."
+                title={t('projects.ybyra')}
+                content={t('projects.ybyraContent')}
                 image={ybyra}
-                alt="Página inicial do projeto Conexão Ybyra"
+                alt={t('projects.ybyraAlt')}
                 tags={["React", "Typescript", "MySQL", "Java", "Spring"]}
               />
               </div>
@@ -115,15 +117,15 @@ export default function Home() {
             {/* Experience */}
             <div id="experience" className="pt-24" ref={refExperience}>
               <p className="font-bold pb-8 lg:hidden sticky top-0 backdrop-blur-sm px-8 dark:text-offWhite">
-                EXPERIÊNCIA
+                {t('experience.title')}
               </p>
               <div className="px-8 lg:px-0">
               <Experience
-                year="DEZ 2023 — PRESENTE"
-                position="Desenvolvedora Junior"
-                company="DevMagic"
+                year={t('experience.year')}
+                position={t('experience.position')}
+                company={t('experience.company')}
                 link="https://devmagic.com.br/home/"
-                description="Construo e mantenho o front-end de aplicações web e mobile para clientes nacionais e internacionais de diversos ramos, de soluções comerciais a organização de eventos corporativos, passando por comércio de granéis e monitorias de métricas de sustentabilidade. Trabalho em um time multifuncional, supervisionada por desenvolvedores seniores e em contato diário com as equipes de Design e Product Management."
+                description={t('experience.description')}
                 tags={[
                   "React",
                   "Next",

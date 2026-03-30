@@ -1,0 +1,53 @@
+{
+  "footer": {
+    "codigo": "Código feito no",
+    "visual": "Visual Studio Code.",
+    "construido": "Construído com",
+    "e": "e",
+    "utilizando": ". Utilizando",
+    "deploy": " Deploy feito com"
+  },
+  "sidebar": {
+    "role": "Desenvolvedora Front-End",
+    "description": "Eu desenvolvo projetos acessíveis, centrados na experiência do usuário.",
+    "menu": {
+      "about": "SOBRE",
+      "projects": "PROJETOS",
+      "experience": "EXPERIÊNCIA"
+    }
+  },
+  "about": {
+    "title": "SOBRE",
+    "intro": "Sou uma desenvolvedora front-end com foco em construir projetos focados na experiência do usuário. Utilizo os recursos das linguagens/bibliotecas nas quais desenvolvo para evitar códigos excessivamente e desnecessariamente robustos e ilegíveis, combinando acessibilidade e usabilidade com performance e eficiência.",
+    "currentRole": "Atualmente sou Desenvolvedora Jr. na",
+    "intro2": ", uma Software House com clientes nacionais e internacionais. Atuo em diversos projetos, como: uma plataforma de organização de eventos; um site de monitoramento e avaliação de impacto social para empresas; uma plataforma de soluções para a área comercial; entre outros. Desenvolvo diariamente com tecnologias como Typescript (utilizando React/NextJS e NodeJS) e NoCode/Low-Code com Bubble e FlutterFlow, sempre com a supervisão de desenvolvedores sêniors, assim aprimorando conhecimentos técnicos e soft skills.",
+    "intro3": "Possuo certificações abrangentes em Typescript e React - áreas de enfoque primário - bem como em Node.Js, Python, Java e Cloud Computing (AWS Certified Cloud Practitioner). Além disso, meu percurso anterior como Professora de História me proporcionou uma base sólida em habilidades interpessoais e colaborativas, fomentadas ao longo de anos de experiência em sala de aula.",
+    "intro4": "No meu tempo livre, gosto de brincar com minha cachorra, de longas caminhadas na praia, e de experimentar todo tipo de jogos de RPG ou Roguelike que eu encontrar."
+  },
+  "projects": {
+    "title": "PROJETOS",
+    "bloom": "Bloom",
+    "bloomContent": "Bloom é uma plataforma de monitoramento e avaliação de impacto social, ajudando empresas a atingirem métricas de Governança, Impacto Social e Ambiental.",
+    "bloomAlt": "Página inicial do site Bloom",
+    "blueprintt": "Blueprintt",
+    "blueprinttContent": "Backoffice de uma plataforma de organização de eventos corporativos.",
+    "blueprinttAlt": "Página inicial do site Blueprintt",
+    "scaler": "Scaler Sale",
+    "scalerContent": "Plataforma de soluções para a área comercial. Oferece ferramentas como: prospecção via e-mail; busca de leads personalizados; e playbooks de vendas.",
+    "scalerAlt": "Página inicial do site Scaler Sale",
+    "cifraDeCesar": "Cifra de César",
+    "cifraDeCesarContent": "Técnica de criptografia clássica, onde cada letra de um texto é substituída por outra, que se encontra no alfabeto após a primeira letra em um número definido de vezes.",
+    "cifraDeCesarAlt": "Página inicial do projeto Cifra de César",
+    "ybyra": "Conexão Ybyra",
+    "ybyraContent": "Projeto de uma rede social que conecta usuários e atividades em parques e praças públicas.",
+    "ybyraAlt": "Página inicial do projeto Conexão Ybyra"
+  },
+  "experience": {
+    "title": "EXPERIÊNCIA",
+    "year": "DEZ 2023 — PRESENTE",
+    "position": "Desenvolvedora Junior",
+    "company": "DevMagic",
+    "description": "Construo e mantenho o front-end de aplicações web e mobile para clientes nacionais e internacionais de diversos ramos, de soluções comerciais a organização de eventos corporativos, passando por comércio de granéis e monitorias de métricas de sustentabilidade. Trabalho em um time multifuncional, supervisionada por desenvolvedores seniores e em contato diário com as equipes de Design e Product Management.",
+    "viewResume": "Ver currículo completo"
+  }
+}

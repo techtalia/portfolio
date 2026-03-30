@@ -2,6 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
 
 interface experienceProps {
   year: string;
@@ -20,6 +21,8 @@ const Experience = ({
   tags,
   company,
 }: experienceProps) => {
+  const { t, i18n } = useTranslation();
+  
   function openLink() {
     window.open(link)?.focus();
   }
@@ -52,9 +55,9 @@ const Experience = ({
         </div>
 
       </div>
-      <Link href={"/curriculo"} target="_blank">
+      <Link href={i18n.language === 'en' ? '/resume' : '/curriculo'} target="_blank">
         <button className="hover:text-darkBlue font-bold hover:cursor-pointer mt-4 dark:text-lightBlue dark:hover:text-hoverBlue">
-          Ver currículo completo
+          {t('experience.viewResume')}
         </button>
       </Link>
     </div>

@@ -1,0 +1,53 @@
+{
+  "footer": {
+    "codigo": "Code made in",
+    "visual": "Visual Studio Code.",
+    "construido": "Built with",
+    "e": "and",
+    "utilizando": ". Utilizing",
+    "deploy": " Deployed with"
+  },
+  "sidebar": {
+    "role": "Front-End Developer",
+    "description": "I develop accessible projects centered on user experience.",
+    "menu": {
+      "about": "ABOUT",
+      "projects": "PROJECTS",
+      "experience": "EXPERIENCE"
+    }
+  },
+  "about": {
+    "title": "ABOUT",
+    "intro": "I am a front-end developer with a focus on building projects centered on user experience. I use the resources of the languages/libraries in which I develop to avoid overly and unnecessarily robust and illegible code, combining accessibility and usability with performance and efficiency.",
+    "currentRole": "Currently I'm a Junior Developer at",
+    "intro2": ", a Software House with national and international clients. I work on various projects, such as: an event organization platform; a social impact monitoring and evaluation platform for companies; a platform for commercial solutions; among others. I work daily with technologies like Typescript (using React/NextJS and NodeJS) and NoCode/Low-Code with Bubble and FlutterFlow, and I'm always under the supervision of senior developers, thus improving technical and soft skills.",
+    "intro3": "I have certifications in Typescript and React - primary areas of focus - as well as in Node.Js, Python, Java and Cloud Computing (AWS Certified Cloud Practitioner). Additionally, my previous experience as a History Teacher provided me with a solid foundation in interpersonal and collaborative skills, fostered through years of classroom experience.",
+    "intro4": "At my free time, I like to play with my dog, take long walks on the beach, and try all kinds of RPG and Roguelike games I can find."
+  },
+  "projects": {
+    "title": "PROJECTS",
+    "bloom":"Bloom",
+    "bloomContent": "Bloom is a social impact monitoring and evaluation platform, it helps companies achieve metrics for Governance, Social Impact and Environmental metrics.",
+    "bloomAlt": "Bloom website homepage",
+    "blueprintt": "Blueprintt",
+    "blueprinttContent": "Backoffice of an event organization platform.",
+    "blueprinttAlt": "Blueprintt website homepage",
+    "scaler": "Scaler Sale",
+    "scalerContent": "Platform for commercial solutions. It offers tools like: email prospecting; personalized lead search; and sales playbooks.",
+    "scalerAlt": "Scaler Sale website homepage",
+    "cifraDeCesar": "Caesar Cipher",
+    "cifraDeCesarContent": "Classic cryptography technique, where each letter of a text is replaced by another, which is found in the alphabet after the first letter a certain number of times.",
+    "cifraDeCesarAlt": "Caesar Cipher project homepage",
+    "ybyra": "Ybyra Connection",
+    "ybyraContent": "Project of a social network that connects users to activities in public parks and squares.",
+    "ybyraAlt": "Ybyra Connection project homepage"
+  },
+  "experience": {
+    "title": "EXPERIENCE",
+    "year": "DEC 2023 — PRESENT",
+    "position": "Junior Developer",
+    "company": "DevMagic",
+    "description": "I build and maintain the front-end of web and mobile applications for national and international clients from various sectors, from commercial solutions to corporate event organization, passing through bulk trade and sustainability metrics monitoring. I work in a multifunctional team, supervised by senior developers and in daily contact with the Design and Product Management teams.",
+    "viewResume": "View full resume"
+  }
+}
