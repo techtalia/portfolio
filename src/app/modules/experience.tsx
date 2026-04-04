@@ -33,10 +33,10 @@ const Experience = ({
         className="group sm:flex rounded-md hover:bg-linear-to-r from-[#C5D3E0] to-[#e0ecff] hover:cursor-pointer w-full gap-2 space-y-4 dark:hover:bg-linear-to-r dark:from-[#0b5394] dark:to-[#073763]"
         onClick={openLink}
       >
-        <p className="text-xs w-1/4 dark:text-offWhite">{year}</p>
+        <p className="text-xs md:w-1/4 dark:text-offWhite">{year}</p>
 
         {/* title and content */}
-        <div className="w-3/4">
+        <div className="w-full md:w-3/4">
           <div className="flex gap-2">
             <p className="font-semibold dark:text-offWhite">{position}</p>•
             <p className="font-semibold dark:text-offWhite">{company}</p>

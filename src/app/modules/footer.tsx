@@ -6,7 +6,7 @@ const Footer = () => {
   const { t } = useTranslation();
   
   return (
-    <div className="pt-24 w-4/5 px-8 lg:px-0">
+    <div className="pt-24 px-8 lg:px-0">
       <p className="dark:text-offWhite">
         {t('footer.codigo')}{" "}
         <a
